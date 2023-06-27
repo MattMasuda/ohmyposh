@@ -10,10 +10,10 @@
           "background": "#6a6a6a",
           "foreground": "#f2f3f8",
           "properties": {
-            "style": "mixed",
-            "max_depth": 3,
+            "style": "agnoster_short",
+            "max_depth": 5,
             "folder_icon": "\u2026",
-            "folder_separator_icon": " \ue0b1 "
+            "folder_separator_icon": "\\"
           },
           "style": "diamond",
           "leading_diamond": "\u256d\u2500\ue0b2",
