@@ -17,7 +17,7 @@
           },
           "style": "diamond",
           "leading_diamond": "\u256d\u2500\ue0b2",
-          "template": " {{ .Path }} ",
+          "template": " \uf0c7 {{ .Path }} ",
           "type": "path"
         },
         {
