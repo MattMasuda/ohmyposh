@@ -105,15 +105,16 @@
             "invert_powerline": true,            
             "powerline_symbol": "\ue0b2",
             "foreground": "#193549",
-            "background": "#7bd8fa",
+            "background": "#4caf50",
             "background_templates": [
+              "{{if lt .Percentage 25}}#ff6666{{end}}",
               "{{if eq \"Charging\" .State.String}}#40c4ff{{end}}",
-              "{{if eq \"Discharging\" .State.String}}#ff5722{{end}}",
+              "{{if eq \"Discharging\" .State.String}}#ff8f8f{{end}}",
               "{{if eq \"Full\" .State.String}}#4caf50{{end}}"
             ],
             "template": " {{ if not .Error }}{{ .Icon }}{{ .Percentage }}{{ end }} ",
             "properties": {
-              "discharging_icon": "\udb85\udfe2 ",
+              "discharging_icon": "\udb80\udc7e ",
               "charging_icon": "\udb80\udc84 ",
               "charged_icon": "\udb80\udc79 "
             }
