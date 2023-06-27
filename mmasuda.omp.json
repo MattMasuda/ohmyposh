@@ -6,13 +6,11 @@
       "alignment": "left",
       "newline": true,
       "segments": [
-
-
         {
           "background": "#6a6a6a",
           "foreground": "#f2f3f8",
           "properties": {
-            "style": "agnoster_short",
+            "style": "mixed",
             "max_depth": 3,
             "folder_icon": "\u2026",
             "folder_separator_icon": " \ue0b1 "
@@ -39,11 +37,17 @@
             "branch_identical_icon": "\uf444",
             "branch_gone_icon": "\ueab8"
           },
-          "style": "powerline",
+          "style": "plain",
           "powerline_symbol": "",
-          "template": " {{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }} <transparent>\ue0b1</> <#121318>\uf044 {{ .Working.String }}</>{{ end }}{{ if .Staging.Changed }} <transparent>\ue0b1</> <#121318>\uf046 {{ .Staging.String }}</>{{ end }}{{ if gt .StashCount 0 }} <transparent>\ue0b1</> <#121318>\ueb4b {{ .StashCount }}</>{{ end }} ",
+          
+          "template": "<parentBackground,background>\ue0b0</> {{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }} <transparent>\ue0b1</> <#121318>\uf044 {{ .Working.String }}</>{{ end }}{{ if .Staging.Changed }} <transparent>\ue0b1</> <#121318>\uf046 {{ .Staging.String }}</>{{ end }}{{ if gt .StashCount 0 }} <transparent>\ue0b1</> <#121318>\ueb4b {{ .StashCount }}</>{{ end }} ",
           "type": "git"
-        }
+        },
+        {
+            "type": "text",
+            "style": "plain",
+            "template": "<parentBackground,transparent>\ue0b0</>"
+        }        
       ],
       "type": "prompt"
     },
