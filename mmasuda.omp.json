@@ -87,8 +87,8 @@
             ],
             "template": " {{ if not .Error }}{{ .Icon }}{{ .Percentage }}{{ end }} ",
             "properties": {
-              "discharging_icon": "\udb80\udc84 ",
-              "charging_icon": "\udb80\udea5 ",
+              "discharging_icon": "\udb80\udc79 ",
+              "charging_icon": "\udb80\udc84 ",
               "charged_icon": "\udb81\udea5 "
             }
         },             
